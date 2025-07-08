@@ -23,7 +23,7 @@ public class Calculator {
             int input2 = number.nextInt();
 
             //사칙연산 시작
-            if (sign1.equals("-")) {
+            if (sign1.equals("+")) {
                 result = input1 + input2;
                 System.out.println("결과 : " + result);
             } else if (sign1.equals("-")) {
