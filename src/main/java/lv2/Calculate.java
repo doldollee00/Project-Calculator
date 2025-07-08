@@ -1,28 +1,26 @@
-package v2;
-
-import java.util.Scanner;
+package lv2;
 
 public class Calculate {
 
     int result;
 
     //사칙연산 수행
-    int sum(int value1, int value2) {
+    public int sum(int value1, int value2) {
         result = value1 + value2;
         return result;
     }
 
-    int sub(int value1, int value2) {
+    public int sub(int value1, int value2) {
         result = value1 - value2;
         return result;
     }
 
-    int mult(int value1, int value2) {
+    public int mult(int value1, int value2) {
         result = value1 * value2;
         return result;
     }
 
-    int div(int value1, int value2) {
+    public int div(int value1, int value2) {
         result = value1 / value2;
         return result;
     }
