@@ -1,15 +1,16 @@
 package Project_Calculator;
 
 import lv2.Calculate;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        int result1 = 0;
+        int result1;
         String text1 = "";
 
         Scanner scanner = new Scanner(System.in);
-
         Calculate calculate = new Calculate();
 
         //정수 입력 받기
@@ -42,9 +43,9 @@ public class Calculator {
                 }
             } else System.out.println("사칙연산 기호를 잘 못 입력하셨습니다!!");
 
+
             System.out.print(" 계속 반복 하시겠습니까? (종료하려면 exit)");
             text1 = scanner.next();
-
         }
     }
 }
