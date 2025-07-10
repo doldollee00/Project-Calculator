@@ -2,6 +2,7 @@ package lv2;
 
 import lv2.Calculate;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Calculator {
@@ -15,7 +16,6 @@ public class Calculator {
         //정수 입력 받기
         while (!text1.equals("exit")) {
             System.out.print("첫번째 숫자를 입력하세요: ");
-            System.out.print("입력안하면 똥꼬");
             int input1 = scanner.nextInt();
 
             System.out.print("+,-,*,/ 중 하나를 입력하세요: ");
@@ -43,9 +43,19 @@ public class Calculator {
                 }
             } else System.out.println("사칙연산 기호를 잘 못 입력하셨습니다!!");
 
+            //게터
+            ArrayList<Integer> resulthome1 = calculate.getResulthome();
+            System.out.println("resutlhome값" + resulthome1);
 
-            System.out.print(" 계속 반복 하시겠습니까? (종료하려면 exit)");
+            System.out.print(" 계속 반복 하시겠습니까?(종료(exit), 초기화(reset)");
             text1 = scanner.next();
+
+            //세터를 이용한 결과값 초기화
+            if (text1.equals("reset")){
+                ArrayList<Integer> newResultHome = new ArrayList<>();
+                calculate.setResulthome(newResultHome);
+                System.out.println("결과 값들을 초기화 하였습니다." + calculate.getResulthome());
+            }
         }
     }
 }

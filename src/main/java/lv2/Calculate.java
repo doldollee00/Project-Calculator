@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Calculate {
 
-    //연산 결과를 저장하는 컬렉션 타입
+    //연산 결과를 저장하는 컬렉션 타입, 외부에서 접근하기 못하도록 private로 캡슐화
     private ArrayList<Integer> resulthome = new ArrayList<>();
 
     //사칙연산 수행
@@ -37,11 +37,5 @@ public class Calculate {
     //세터 설정
     public void setResulthome(ArrayList<Integer> resulthome) {
         this.resulthome = resulthome;
-    }
-
-
-    // 저장된 데이터 삭제
-    public void removeResulthome() {
-        resulthome.remove(0);
     }
 }
