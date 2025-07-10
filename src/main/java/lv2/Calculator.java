@@ -47,13 +47,17 @@ public class Calculator {
             ArrayList<Integer> resulthome1 = calculate.getResulthome();
             System.out.println("resutlhome값" + resulthome1);
 
-            System.out.print(" 계속 반복 하시겠습니까?(종료(exit), 초기화(reset)");
+            System.out.print(" 계속 반복 하시겠습니까?(종료(exit), 초기화(reset), 맨앞에 값 삭제(rm)");
             text1 = scanner.next();
 
             //세터를 이용한 결과값 초기화
             if (text1.equals("reset")){
                 ArrayList<Integer> newResultHome = new ArrayList<>();
                 calculate.setResulthome(newResultHome);
+                System.out.println("결과 값들을 초기화 하였습니다." + calculate.getResulthome());
+            }else if(text1.equals("rm")){
+                ArrayList<Integer> removeResultHome = calculate.removeResulthome();
+                calculate.setResulthome(removeResultHome);
                 System.out.println("결과 값들을 초기화 하였습니다." + calculate.getResulthome());
             }
         }

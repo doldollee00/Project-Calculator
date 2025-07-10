@@ -38,4 +38,10 @@ public class Calculate {
     public void setResulthome(ArrayList<Integer> resulthome) {
         this.resulthome = resulthome;
     }
+
+    // 저장된 데이터 삭제
+    public ArrayList<Integer> removeResulthome() {
+        resulthome.remove(0);
+        return resulthome;
+    }
 }
