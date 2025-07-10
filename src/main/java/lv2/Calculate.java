@@ -7,6 +7,28 @@ public class Calculate {
     //연산 결과를 저장하는 컬렉션 타입
     private ArrayList<Integer> resulthome = new ArrayList<>();
 
+    //사칙연산 수행
+    public int sum(int value1, int value2) {
+        int result = value1 + value2;
+        resulthome.add(result);
+        return result;
+    }
+    public int sub(int value1, int value2) {
+        int result = value1 - value2;
+        resulthome.add(result);
+        return result;
+    }
+    public int mult(int value1, int value2) {
+        int result = value1 * value2;
+        resulthome.add(result);
+        return result;
+    }
+    public int div(int value1, int value2) {
+        int result = value1 / value2;
+        resulthome.add(result);
+        return result;
+    }
+
     //게터 설정
     public ArrayList<Integer> getResulthome() {
         return resulthome;
@@ -17,32 +39,8 @@ public class Calculate {
         this.resulthome = resulthome;
     }
 
-    //사칙연산 수행
-    public int sum(int value1, int value2) {
-        int result = value1 + value2;
-        resulthome.add(result);
-        System.out.println("1 번째 요소 조회: " + resulthome.get(0));
-        return result;
-    }
 
-    public int sub(int value1, int value2) {
-        int result = value1 - value2;
-        resulthome.add(result);
-        return result;
-    }
-
-    public int mult(int value1, int value2) {
-        int result = value1 * value2;
-        resulthome.add(result);
-        return result;
-    }
-
-    public int div(int value1, int value2) {
-        int result = value1 / value2;
-        resulthome.add(result);
-        return result;
-    }
-
+    // 저장된 데이터 삭제
     public void removeResulthome() {
         resulthome.remove(0);
     }
