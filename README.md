@@ -3,10 +3,15 @@
 
 ## 프로젝트 소개
 (Lv1, Lv2, Lv3) 총 3단계로 프로젝트 진행
+
 Lv1 : Calculator(main) 클레스에 기본적인 문법을 사용하여 사칙연산을 수행하는 계산기 구현 (Scanner, if, while)
+
 Lv2 : Calculator(main) 클래스와 Calculate(사칙연산) 글래스를 생성하여 연산수행을 메인에서 분리 시킴
+
       코드를 캡슐화 하여 보호하고, Getter와 Setter 메서드를 사용하여 수정 및 출력할 수 있도록 구현 (캡슐화, Getter, Setter
+      
 Lv3 : Enum, 제네릭, Lambda, Stream을 이용하여 좀 더 객체지향적이게 수정
+
 
 ### 개발 기간
 2025.07.08 ~ 2025.07.14
