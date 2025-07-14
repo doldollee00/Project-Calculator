@@ -58,7 +58,7 @@ public class Calculator {
             }else if(text1.equals("rm")){
                 ArrayList<Integer> removeResultHome = calculate.removeResultHome();
                 calculate.setResultHome(removeResultHome);
-                System.out.println("결과 값들을 초기화 하였습니다." + calculate.getResultHome());
+                System.out.println("결과 값을 삭제 하였습니다." + calculate.getResultHome());
             }
         }
     }
