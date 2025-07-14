@@ -15,7 +15,6 @@ public class Main {
 
 
         //정수 입력 받기
-
         while (!text1.equals("exit")) {
             System.out.print("첫번째 숫자를 입력하세요: ");
             Double input1 = scanner.nextDouble();

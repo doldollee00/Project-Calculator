@@ -7,7 +7,6 @@ public class ArithmeticCalculator <T extends Number> {
 
     //연산 결과를 저장하는 컬렉션 타입, 외부에서 접근하기 못하도록 private로 캡슐화
     private ArrayList<Double> resultHome = new ArrayList<>();
-    private ArrayList<Double> resultHome2 = new ArrayList<>();
 
     //사칙연산 수행
     public double calculator(T a, T b, Operator operator) {
