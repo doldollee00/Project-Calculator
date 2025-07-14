@@ -6,8 +6,7 @@
 
 Lv1 : Calculator(main) 클레스에 기본적인 문법을 사용하여 사칙연산을 수행하는 계산기 구현 (Scanner, if, while)
 
-Lv2 : Calculator(main) 클래스와 Calculate(사칙연산) 글래스를 생성하여 연산수행을 메인에서 분리 시킴
-코드를 캡슐화 하여 보호하고, Getter와 Setter 메서드를 사용하여 수정 및 출력할 수 있도록 구현 (캡슐화, Getter, Setter
+Lv2 : Calculator(main) 클래스와 Calculate(사칙연산) 클래스를 생성하여 연산수행을 메인에서 분리 시키고, 코드를 캡슐화 하여 보호, Getter와 Setter 메서드를 사용하여 수정 및 출력할 수 있도록 구현 (캡슐화, Getter, Setter)
       
 Lv3 : Enum, 제네릭, Lambda, Stream을 이용하여 좀 더 객체지향적이게 수정
 
@@ -17,20 +16,31 @@ Lv3 : Enum, 제네릭, Lambda, Stream을 이용하여 좀 더 객체지향적이
 
 #### 개발 환경
 - IntelliJ IDEA
+- 
 - JDK : corretto-17 (Amazon Corretto 17.0.15)
+- 
 - git / github
 
 ### 주요기능
 - 실수값 2개와 사칙연산 기호 1개를 입력 받아서 계산
+- 
 - 연산 후 결과값을 저장하고 저장된 값을 출력 및 삭제
+- 
 - 종료 명령어를 입력하기 전까지 계속 연산 수행
+- 
 - 결과 값 중 특정 수 보다 큰 값을 찾아서 출력가능
+- 
 - 요구하는 값 외의 데이터를 입력 시 잘못입력 안내
+- 
 
 #### 좋은점과 아쉬운점
 - 코딩을 할 때 무작정 써 나가는게 아닌 순서가 있다는걸 깨달음 (기획, 개발, 리팩토링)
+- 
 - 클래스, 메서드, static, getter, setter 등 여러가지 구문에 대해 실습할 수 있어서 좋았음
-- enum, lambda, stream 등 완벽하게 이해하지 못한점 (반복학습이 필요) 
+- 
+- enum, lambda, stream 등 완벽하게 이해하지 못한점 (반복학습이 필요)
+- 
 - 예외의 경우를 좀 더 세밀하게 설정하지 못한점
+- 
 
   
